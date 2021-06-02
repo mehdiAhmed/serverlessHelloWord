@@ -1,0 +1,19 @@
+org: mehdiahmed
+app: my-aws-python-rest-api-app
+service: my-aws-python-rest-api-app
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  region: eu-west-1
+  runtime: python3.8
+  lambdaHashingVersion: '20201221'
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: /
+          method: get
