@@ -1,6 +1,6 @@
 org: mehdiahmed
 app: my-aws-python-rest-api-app
-service: my-aws-python-rest-api-app
+service: service-test
 
 frameworkVersion: '2'
 
